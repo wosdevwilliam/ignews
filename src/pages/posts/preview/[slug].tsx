@@ -19,8 +19,8 @@ interface PostPreviewProps {
 }
 
 export default function PostPreview({ post }: PostPreviewProps ) {
-    const [session] = useSession()
-    const router = useRouter()
+    const [session] = useSession();
+    const router = useRouter();
 
     useEffect(() => {
         if (session?.activeSubscription) {
